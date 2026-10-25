@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kavárna Pokoj · České Budějovice</title>
+<meta name="description" content="Malá kavárna schovaná v uličce mezi Krajinskou a Českou v Českých Budějovicích. Výběrová káva od Father's Coffee Roasters, domácí dezerty a limonády.">
+<meta property="og:title" content="Kavárna Pokoj · České Budějovice">
+<meta property="og:description" content="Malá kavárna schovaná v uličce mezi Krajinskou a Českou v Českých Budějovicích. Výběrová káva od Father's Coffee Roasters, domácí dezerty a limonády.">
+<meta property="og:image" content="fotky/pruchod.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231E2B45'/%3E%3Crect x='20' y='14' width='24' height='36' rx='12' fill='%23F4C95D'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&amp;family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;1,7..72,400&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styl.css">
+
+<!-- Strukturovaná data pro Google (upravit otevírací dobu podle skutečnosti) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "name": "Kavárna Pokoj",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Krajinská 230/31",
+    "addressLocality": "České Budějovice",
+    "postalCode": "370 01",
+    "addressCountry": "CZ"
+  },
+  "telephone": "+420723643056",
+  "servesCuisine": "Káva, dezerty",
+  "sameAs": ["https://www.facebook.com/pokoj.kavarna/", "https://www.instagram.com/kavarna.pokoj/"]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#obsah">Přeskočit na obsah</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-current="page">Pokoj</a>
+    <nav class="nav" id="nav" aria-label="Hlavní">
+      <a href="o-nas.html">O nás</a>
+      <a href="menu.html">Menu</a>
+      <a href="vystavy.html">Výstavy</a>
+      <a href="kontakt.html">Kde nás najdete</a>
+    </nav>
+    <div class="status" id="status" aria-live="polite"><span class="dot"></span><span id="status-text">Otevírací doba</span></div>
+    <button class="nav-toggle" type="button" aria-controls="nav" aria-expanded="false" aria-label="Otevřít navigaci">
+      <svg class="bars" viewBox="0 0 20 20" aria-hidden="true"><path d="M2 5h16M2 10h16M2 15h16" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+      <svg class="x" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 4l12 12M16 4L4 16" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="obsah">
+
+<!-- ÚVOD -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Pokoj</h1>
+      <p class="slogan"><span>Pokoj s tebou.</span></p>
+      <p class="lead">Malá kavárna schovaná v uličce mezi Krajinskou a Českou. Výběrová káva, domácí dezerty a chvíle klidu uprostřed Budějovic.</p>
+      <div class="actions">
+        <a class="btn solid" href="https://www.google.com/maps/dir/?api=1&amp;destination=Kav%C3%A1rna%20Pokoj%2C%20Krajinsk%C3%A1%20230%2F31%2C%20%C4%8Cesk%C3%A9%20Bud%C4%9Bjovice" target="_blank" rel="noopener">Navigovat k nám</a>
+        <a class="btn ghost" href="menu.html">Co u nás dostanete</a>
+      </div>
+    </div>
+
+    <figure class="map-card">
+      <svg viewBox="0 0 380 440" role="img" aria-labelledby="mapt">
+        <title id="mapt">Mapka: kavárna Pokoj leží v průchodu mezi Krajinskou a Českou ulicí</title>
+        <!-- domy -->
+        <g fill="#D3DCC5">
+          <rect x="0" y="0" width="38" height="440" rx="6"/>
+          <rect x="104" y="0" width="160" height="206" rx="10"/>
+          <rect x="104" y="274" width="160" height="166" rx="10"/>
+          <rect x="330" y="0" width="50" height="440" rx="6"/>
+        </g>
+        <!-- ulice -->
+        <rect x="38" y="0" width="66" height="440" fill="#F7F9F2"/>
+        <rect x="264" y="0" width="66" height="440" fill="#F7F9F2"/>
+        <!-- průchod -->
+        <rect x="104" y="218" width="160" height="44" fill="#F7F9F2"/>
+        <g font-family="Bricolage Grotesque, sans-serif" font-weight="600" font-size="15" fill="#4A5670">
+          <text transform="translate(76 160) rotate(-90)" text-anchor="middle">Krajinská</text>
+          <text transform="translate(302 120) rotate(-90)" text-anchor="middle">Česká</text>
+        </g>
+        <!-- kavárna -->
+        <rect x="190" y="150" width="64" height="56" rx="8" fill="#1E2B45"/>
+        <rect id="window" x="204" y="164" width="36" height="42" rx="18" fill="#F4C95D"/>
+        <text x="222" y="140" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-weight="800" font-size="17" fill="#1E2B45">Pokoj</text>
+        <!-- cesta -->
+        <path id="path" d="M 70 400 L 70 240 L 300 240" fill="none" stroke="#1E2B45" stroke-width="2.5" stroke-linecap="round" opacity=".45"/>
+        <circle id="walker" r="8" fill="#EFAFC0" stroke="#1E2B45" stroke-width="2.5" cx="0" cy="0" style="offset-distance:100%;offset-path:path('M 70 400 L 70 240 L 300 240')"/>
+      </svg>
+      <figcaption>Z Krajinské zahněte do průchodu u čísla 31. Hledejte rozsvícené okno.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- O NÁS (krátce) -->
+<section class="about">
+  <div class="wrap">
+    <h2>Pokoj, ve kterém se zdržíte</h2>
+    <div>
+      <p>Pokoj najdete v pasáži, kam se většina lidí dostane náhodou a pak se vrací. Je tu pár stolků, dobrá káva od Father's Coffee Roasters a klid, který na hlavních ulicích nenajdete.</p>
+      <p>Dezerty pečeme sami, ke kávě dostanete pusinku ve tvaru zvířátka a na zdech visí práce místních umělců.</p>
+      <p><a class="more" href="o-nas.html">Celý příběh a fotky</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- VÝBĚR FOTEK -->
+<section class="gallery" style="padding-top:clamp(64px,10vw,120px)" aria-label="Fotky z kavárny">
+  <div class="wrap">
+    <div class="grid">
+      <img class="photo gA" loading="lazy" width="1200" height="856" style="object-position:50% 60%" alt="Průchod mezi Krajinskou a Českou s dřevěnými výlohami a tabulí „Pokoj s tebou“" src="fotky/pruchod.jpg">
+      <img class="photo gB" loading="lazy" width="825" height="1031" style="object-position:50% 40%" alt="Cappuccino s pusinkou ve tvaru pejska" src="fotky/pusinka.jpg">
+      <img class="photo gC" loading="lazy" width="900" height="1200" style="object-position:50% 70%" alt="Domácí cheesecake, limonáda a káva na stolku v průchodu" src="fotky/cheesecake.jpg">
+    </div>
+  </div>
+</section>
+
+<!-- ROZCESTNÍK -->
+<section class="signpost" aria-label="Kam dál">
+  <div class="wrap cards">
+    <a class="card" href="menu.html">
+      <svg class="meringue" viewBox="0 0 80 60" aria-hidden="true">
+            <path d="M14 22 H56 V34 C56 46 47 54 35 54 C23 54 14 46 14 34 Z" fill="#F7F9F2" stroke="#1E2B45" stroke-width="2.5" stroke-linejoin="round"/>
+            <path d="M56 26 C70 24 70 42 55 40" fill="none" stroke="#1E2B45" stroke-width="2.5"/>
+            <path d="M26 16 C24 11 30 9 28 4 M38 16 C36 11 42 9 40 4" fill="none" stroke="#5E7A55" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+      <h2>Menu</h2>
+      <p>Výběrová káva, domácí limonády, horký mošt a dezert dne.</p>
+      <span class="go">Co u nás dostanete →</span>
+    </a>
+    <a class="card dark" href="vystavy.html">
+      <svg class="meringue" viewBox="0 0 80 60" aria-hidden="true">
+            <rect x="8" y="10" width="64" height="42" rx="4" fill="#F7F9F2" stroke="#1E2B45" stroke-width="2.5"/>
+            <rect x="16" y="18" width="48" height="26" rx="2" fill="#5E7A55"/>
+            <circle cx="50" cy="26" r="5" fill="#F4C95D"/>
+          </svg>
+      <h2>Výstavy</h2>
+      <p>Galerie na zdi s pracemi místních umělců a spropitné, které hlasuje.</p>
+      <span class="go">Co zrovna visí →</span>
+    </a>
+    <a class="card" href="kontakt.html">
+      <svg class="meringue" viewBox="0 0 80 60" aria-hidden="true">
+            <rect x="22" y="8" width="36" height="46" rx="18" fill="#F4C95D" stroke="#1E2B45" stroke-width="2.5"/>
+            <path d="M40 8 V54 M22 30 H58" stroke="#1E2B45" stroke-width="2"/>
+          </svg>
+      <h2>Kde nás najdete</h2>
+      <p class="today-hours" data-dnes>Otevírací doba</p>
+      <p>Krajinská 230/31, vchod z průchodu do České ulice.</p>
+      <span class="go">Jak k nám trefit →</span>
+    </a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <nav class="foot-nav" aria-label="Patička">
+      <a href="index.html">Úvod</a>
+      <a href="o-nas.html">O nás</a>
+      <a href="menu.html">Menu</a>
+      <a href="vystavy.html">Výstavy</a>
+      <a href="kontakt.html">Kde nás najdete</a>
+    </nav>
+    <span>Kavárna Pokoj, Krajinská 230/31, České Budějovice · <a href="tel:+420723643056">723 643 056</a></span>
+    <span>Káva od Father's Coffee Roasters</span>
+  </div>
+</footer>
+
+<script src="hodiny.js"></script>
+<script src="navigace.js"></script>
+</body>
+</html>
